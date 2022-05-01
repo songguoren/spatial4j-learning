@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.leokok.spatial4j.learning</groupId>
+    <artifactId>spatial4j-learning</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>spatial4j-learning</name>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.locationtech.spatial4j</groupId>
+            <artifactId>spatial4j</artifactId>
+            <version>0.8</version>
+        </dependency>
+        <!-- Used for GeoJSON parsing -->
+        <dependency>
+            <groupId>org.noggit</groupId>
+            <artifactId>noggit</artifactId>
+            <version>0.8</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Used for optional Jackson support -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.10.8</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- JTS is essentially only used for polygons. -->
+        <dependency>
+            <groupId>org.locationtech.jts</groupId>
+            <artifactId>jts-core</artifactId>
+            <version>1.18.1</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.carrotsearch.randomizedtesting</groupId>
+            <artifactId>randomizedtesting-runner</artifactId>
+            <version>2.5.3</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
