@@ -1,4 +1,4 @@
-# 操作说明
+# 对象创建说明
 ## 1.创建几何工厂
 ### 1.1 ShapeFactory
 spatial4j创建工厂 SpatialContext GEO模式(通过球计算公式计算相关关系)
