@@ -1,4 +1,8 @@
 # Spatial距离计算
+距离计算支持三个公式:
+* [Law of Cosines(余弦定理)](http://en.wikipedia.org/wiki/Spherical_law_of_cosines)
+* [Haversine球面模型](http://en.wikipedia.org/wiki/Haversine_formula)
+* [Vincenty椭球模型](http://en.wikipedia.org/wiki/Vincenty's_formulae)
 ## 1.距离计算工具类DistanceUtils
 测试点数据选取点符合(勾三股四玄五)
 ### 1.1 DistanceUtils.distLawOfCosinesRAD
