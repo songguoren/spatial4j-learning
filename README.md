@@ -8,7 +8,7 @@ Spatial4j主要有三个主要功能：<br>
 3）解析WKT、GeoJSON等空间描述标准格式<br>
 Spatial4j利用了部分JTS的能力（JTS是最流行的java空间计算库），例如多边形是基于JTS实现的。相比与JTS，spatial4j还支持了圆以及地理空间计算。用JTS，通常用多边形近似替代了圆的计算，对结果会造成一定误差，而Spatial4j支持了圆；另外，地理空间计算的应用现在十分广泛，用spatial4j会更加方便。
 
-##项目结构
+## 项目结构
 1）context  几何工厂，负责创建相关几何对象<br>
 2）distance 相关计算包 <br>
 3）exception  <br>
