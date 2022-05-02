@@ -1,15 +1,28 @@
 # 对象创建说明
 ## 1.创建几何工厂
 ### 1.1 ShapeFactory
-spatial4j创建工厂 SpatialContext GEO模式(通过球计算公式计算相关关系)
+spatial4j创建工厂 SpatialContext GEO模式(通过圆计算公式计算相关关系)
 ```
 SpatialContext ctx = SpatialContext.GEO;
 ShapeFactory shapeFactory = ctx.getShapeFactory();
 ```
+非GEO模式(余玄定理计算距离等)
+```
+SpatialContextFactory spatialContextFactory = new SpatialContextFactory();
+spatialContextFactory.geo = false;
+SpatialContext spatialContext = spatialContextFactory.newSpatialContext();
+```
 ### 1.2 JtsShapeFactory
+GEO模式(通过圆计算公式计算相关关系)
 ```
 JtsSpatialContext jtsSpatialContext = JtsSpatialContext.GEO;
 JtsShapeFactory jtsShapeFactory = jtsSpatialContext.getShapeFactory();
+```
+非GEO模式(余玄定理计算距离等)
+```
+JtsSpatialContextFactory jtsSpatialContextFactory = new JtsSpatialContextFactory();
+jtsSpatialContextFactory.geo = false;
+JtsSpatialContext jtsSpatialContext = jtsSpatialContextFactory.newSpatialContext();
 ```
 ## 2.创建几何对象
 ### 2.1 spatial4j shape对象创建
