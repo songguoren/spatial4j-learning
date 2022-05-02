@@ -18,6 +18,7 @@ Spatial4j利用了部分JTS的能力（JTS是最流行的java空间计算库）�
 [shape几何结构说明](docs/shape/shape.md)<br>
 [shape几何创建](docs/shape/shape-create.md)<br>
 [平面坐标系与空间坐标系下面的几何关系](docs/shape/shape-relate.md)<br>
+[Spatial距离计算](docs/shape/spatial4j-distance.md)<br>
 ## 安装教程
 ```xml
 <dependency>
